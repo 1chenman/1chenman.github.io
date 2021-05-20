@@ -8,9 +8,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://chenman.cf/favicon.ico?v=1621391381659">
+<link rel="shortcut icon" href="https://chenman.cf/favicon.ico?v=1621475248542">
 <link rel="stylesheet" href="https://chenman.cf/styles/main.css">
 
+
+  
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css" />
+  
 
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -35,7 +41,7 @@ Gridea 主页
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://chenman.cf">
-        <img src="https://chenman.cf/images/avatar.png?v=1621391381659" class="site-logo">
+        <img src="https://chenman.cf/images/avatar.png?v=1621475248542" class="site-logo">
         <h1 class="site-title">.</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -139,6 +145,12 @@ Gridea 主页
             
 
             
+              
+
+              
+                <div id="disqus_thread" data-aos="fade-in"></div>
+              
+            
 
           </div>
 
@@ -161,6 +173,26 @@ var app = new Vue({
 </script>
 
 
+
+
+
+  
+
+  
+    <script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+    <script>
+
+    var options = {
+      shortname: 'chen',
+      apikey: '3J9S0ee5SlB6OKYTuGKJY0rG768l2WzPg0LmlQtBR0j7pIL5WD9tYpjlF5DHGEIH',
+    }
+    if ('') {
+      options.api = ''
+    }
+    var dsqjs = new DisqusJS(options)
+
+    </script>
+  
 
 
 
